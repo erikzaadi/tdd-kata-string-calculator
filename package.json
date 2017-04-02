@@ -1,0 +1,27 @@
+{
+  "name": "tdd-kata-string-calculator",
+  "version": "1.0.0",
+  "description": "Bootstrap for the infamous string calculator TDD kata",
+  "main": "src/index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "mocha tests --recursive --reporter=emoji-reporter",
+    "test-watch": "npm run test -- -w",
+    "lint": "eslint ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "3.5.0",
+    "emoji-reporter": "0.3.0",
+    "mocha": "3.2.0"
+  },
+  "devDependencies": {
+    "eslint": "3.19.0",
+    "eslint-config-airbnb-base": "11.1.2",
+    "eslint-plugin-import": "2.2.0"
+  }
+}
