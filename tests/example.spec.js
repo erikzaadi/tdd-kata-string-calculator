@@ -40,4 +40,13 @@ describe('Amazong add function', () => {
       expect(sourceModule.Add(newRandNumbers.join('\n'))).to.be.eql(newRandNumbers.reduce((sum, val) => sum + val), 0);
     });
   });
+
+  describe('step 8', () => {
+    it('The following input is ok: 1\n2,3 (will equal 6)', () => {
+	expect(sourceModule.Add('1\n2,3')).to.be.eql(6);	
+    });
+    it('Support different delimiters', () => {
+        expect(sourceModule.Add('//;\n1;2')).to.be.eql(3);
+    });
+  });
 });
